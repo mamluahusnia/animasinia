@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Animasi pada Menu dengan JQuery</title>
+		
+		<script type="text/javascript" src="jquery.js"></script>
+		
+		<script type="text/javascript">
+		$(document).ready(function() {
+		    $('ul.menu a')
+		        .hover(function() {
+		            $(this).stop().animate({ left: 20 }, 'fast');
+		        }, function() {
+		            $(this).stop().animate({ left: 0 }, 'fast');
+		        });
+		});
+		</script>
+		<style type="text/css">
+		 .container{
+	  background : blue;
+        width: 200px;
+        height: 220px;
+        margin: auto;
+        position: relative;
+        border: 5px solid black;
+        overflow: hidden;
+      }
+		ul.menu{
+			margin:0 0 1em; /* atas, kiri, bawah */
+			width:125px;
+			list-style:none
+		}
+		ul.menu li {
+			margin:0;
+			background:#000;
+		} 
+		ul.menu li a {
+			position:relative;
+			display:block;
+			padding:8px 0;
+			width:125px;
+			background:#ff0;
+			color:#f0f;
+			text-align:center;
+			text-decoration:none;
+		}
+		ul.menu li a:hover {
+			border:0;
+			background:#ff0;
+			color:#000;
+		}
+
+		</style>
+	</head>
+	<body>
+		<CENTER><h1>Menu Dengan JQuery</h1></CENTER>
+		 <div class="container">
+		<ul class="menu">
+			<li><a href="b.html">Home</a></li>
+			<li><a href="http://siakad.unw.ac.id/loginsiakad/login">Materi Kuliah</a></li>
+			<li><a href="w.html">animasi</a></li>
+			
+			<li><a href="select.html">Multiple</a></li>
+			<li><a href="a.html">About Me</a></li>
+			<li><a href="https://informatika004.wordpress.com/contact/">komentar saran</a></li>
+
+		</ul>
+		</div>
+		<CENTER><h1>MAMLUATUL HUSNIA</h1></CENTER>
+	</body>
+</html>
+

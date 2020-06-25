@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>slideToggle demo</title>
+  <style>
+  p {
+    width: 400px;
+  }
+  </style>
+  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<button>Toggle</button>
+<p>
+ Nama : Mamluatul husnia </p>
+	<p>Nim : 140117A019 </p>
+	
+</p>
+ <button onclick="goBack()">Go Back</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+	
+</script>
+<script>
+$( "button" ).click(function() {
+  $( "p" ).slideToggle( "slow" );
+});
+</script>
+ 
+</body>
+</html>

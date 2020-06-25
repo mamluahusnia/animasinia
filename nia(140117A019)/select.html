@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+  <title>Jquery multiple select with checkboxes using bootstrap-multiselect.js</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+  <style type="text/css">
+		 .container{
+	  background : pink;
+        width: 250px;
+        height: 400px;
+        margin: auto;
+        position: relative;
+        border: 5px solid black;
+        overflow: hidden;
+      }
+		ul.menu{
+			margin:0 0 1em; /* atas, kiri, bawah */
+			width:125px;
+			list-style:none
+		}
+		ul.menu li {
+			margin:0;
+			background:#000;
+		} 
+		ul.menu li a {
+			position:relative;
+			display:block;
+			padding:8px 0;
+			width:125px;
+			background:#ff0;
+			color:#f0f;
+			text-align:center;
+			text-decoration:none;
+		}
+		ul.menu li a:hover {
+			border:0;
+			background:#ff0;
+			color:#000;
+		}
+
+		</style>
+</head>
+<body>
+
+
+<div class="container">
+	<center><strong>Select Language:</strong></center>
+    <select id="multiple-checkboxes" multiple="multiple">
+        <option value="php">PHP</option>
+        <option value="javascript">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        <option value="jquery">Jquery</option>
+        <option value=".net">.Net</option>
+    </select>
+	 <button onclick="goBack()">Go Back</button>
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#multiple-checkboxes').multiselect();
+    });
+</script>
+
+
+</body>
+</html>
